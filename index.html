@@ -18,35 +18,43 @@
     />
     <!-- TITLE -->
     <title>Slider Pokémon MapaDev</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <header>
-      <img src="src/img/pokebola.png" alt="pokébola" />
-      <h1>Pokedex MapaDev Week</h1>
+    <header class="header">
+      <img class="pokeball" src="src/img/pokebola.png" alt="pokébola" />
+      <h1 class="title">MapaDev Week</h1>
     </header>
-    <main>
-      <button>
+    <main class="slider">
+      <button class="arrow-button">
         <img src="src/img/seta.png" alt="seta de voltar" />
       </button>
 
-      <ul>
-        <li>
-          <div>
-            <h2>Pikachu</h2>
-            <p>HP 300</p>
+      <ul class="list-pokemon">
+        <li class="card selected background-1">
+          <div class="card-info">
+            <h2 class="card-name">Pikachu</h2>
+            <p class="card-health">HP 300</p>
           </div>
-          <div>
-            <img src="src/img/pikachu.png" alt="pokémon pikachu" />
+          <div class="container-img">
+            <img
+              class="pokemon-img"
+              src="src/img/pikachu.png"
+              alt="pokémon pikachu"
+            />
           </div>
-          <div>
-            <h3>Descrição</h3>
-            <p>
+          <div class="description">
+            <h3 class="description-title">Descrição</h3>
+            <p class="description-content">
               Pikachu é um Pokémon da geração dos primeiros que apareceu no Jogo
               Pokémon. É um Pokémon de raça do tipo eletrico.
             </p>
           </div>
         </li>
-        <li>
+        <li class="card background-2">
           <div>
             <h2>Charizard</h2>
             <p>HP 800</p>
@@ -62,7 +70,7 @@
             </p>
           </div>
         </li>
-        <li>
+        <li class="card background-3">
           <div>
             <h2>Mewtwo</h2>
             <p>HP 300</p>
@@ -80,7 +88,7 @@
         </li>
       </ul>
 
-      <button>
+      <button class="arrow-button">
         <img src="src/img/seta.png" alt="seta de avançar" />
       </button>
     </main>
