@@ -38,6 +38,7 @@ body {
   width: 310px;
   height: 530px;
   position: relative;
+  padding-left: 0px;
 }
 
 .arrow-button {
@@ -203,12 +204,13 @@ body {
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #f1ecff; 
+    background-color: #f1ecff;
     border-radius: 20px;
     border: 1.6px #262626 solid;
   }
   .slider {
     flex-direction: column;
+    align-items: center;
     padding: 10px 0;
     gap: 15px;
   }
@@ -221,7 +223,9 @@ body {
     align-items: center;
   }
   .list-pokemon {
-    width:100%
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 430px;
   }
   .card .pokemon-img {
