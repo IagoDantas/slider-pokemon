@@ -246,6 +246,6 @@ body {
   }
   .card .description .description-content {
     font-size: 13px;
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
 }
