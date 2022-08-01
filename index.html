@@ -29,12 +29,12 @@
       <h1 class="title">MapaDev Week</h1>
     </header>
     <main class="slider">
-      <button class="arrow-button">
+      <button id="prev-card-button" class="arrow-button">
         <img src="src/img/seta.png" alt="seta de voltar" />
       </button>
 
       <ul class="list-pokemon">
-        <li class="card selected background-1">
+        <li class="card background-1">
           <div class="card-info">
             <h2 class="card-name">Pikachu</h2>
             <p class="card-health">HP 300</p>
@@ -54,33 +54,43 @@
             </p>
           </div>
         </li>
+
         <li class="card background-2">
-          <div>
-            <h2>Charizard</h2>
-            <p>HP 800</p>
+          <div class="card-info">
+            <h2 class="card-name">Charizard</h2>
+            <p class="card-health">HP 800</p>
           </div>
-          <div>
-            <img src="src/img/charizard.png" alt="pokémon charizard" />
+          <div class="container-img">
+            <img
+              class="pokemon-img"
+              src="src/img/charizard.png"
+              alt="pokémon charizard"
+            />
           </div>
-          <div>
-            <h3>Descrição</h3>
-            <p>
+          <div class="description">
+            <h3 class="description-title">Descrição</h3>
+            <p class="description-content">
               Charizard é um Pokémon da geração dos primeiros que apareceu no
               Jogo Pokémon. É um Pokémon de raça do tipo fogo.
             </p>
           </div>
         </li>
-        <li class="card background-3">
-          <div>
-            <h2>Mewtwo</h2>
-            <p>HP 300</p>
+
+        <li class="card selected background-3">
+          <div class="card-info">
+            <h2 class="card-name">Mewtwo</h2>
+            <p class="card-health">HP 3000</p>
           </div>
-          <div>
-            <img src="src/img/mewtwo.png" alt="pokémon mewtwo" />
+          <div class="container-img">
+            <img
+              class="pokemon-img"
+              src="src/img/mewtwo.png"
+              alt="pokémon mewtwo"
+            />
           </div>
-          <div>
-            <h3>Descrição</h3>
-            <p>
+          <div class="description">
+            <h3 class="description-title">Descrição</h3>
+            <p class="description-content">
               Mewtwo é um Pokémon da geração dos primeiros que apareceu no Jogo
               Pokémon. É um Pokémon de raça do tipo psíquico.
             </p>
@@ -88,9 +98,10 @@
         </li>
       </ul>
 
-      <button class="arrow-button">
+      <button id="next-card-button" class="arrow-button">
         <img src="src/img/seta.png" alt="seta de avançar" />
       </button>
     </main>
+    <script src="src/js/index.js"></script>
   </body>
 </html>
